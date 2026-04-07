@@ -1,0 +1,4 @@
+strategy_name,best_epoch,best_val_auc,test_accuracy,test_macro_f1,test_auc,elapsed_seconds,trainable_params_at_end,total_params,model_size_mb,checkpoint_path
+feature_extraction,12,0.982562,0.831920,0.799439,0.978146,798.98,6152,27525506,106.06,checkpoints\bloodmnist_swin_tiny_feature_extraction_100pct_best.pth
+gradual_unfreezing,12,0.999247,0.971061,0.968216,0.998777,1376.90,27525506,27525506,106.06,checkpoints\bloodmnist_swin_tiny_gradual_unfreezing_100pct_best.pth
+discriminative_learning_rates,6,0.998966,0.969307,0.966070,0.998392,1256.89,27525506,27525506,106.06,checkpoints\bloodmnist_swin_tiny_discriminative_learning_rates_100pct_best.pth

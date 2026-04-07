@@ -1,0 +1,38 @@
+[
+  {
+    "model_key": "resnet50",
+    "timm_name": "resnet50",
+    "checkpoint_path": "checkpoints\\bloodmnist_resnet50_full_fine_tuning_100pct_best.pth",
+    "device_used_for_latency": "cuda",
+    "test_accuracy": 0.9561531715872552,
+    "test_macro_f1": 0.95115122921358,
+    "test_auc": 0.9972802629431436,
+    "total_params": 23524424,
+    "model_size_mb": 89.94159698486328,
+    "inference_latency_ms_per_image": 1.7525991666843765
+  },
+  {
+    "model_key": "swin_tiny",
+    "timm_name": "swin_tiny_patch4_window7_224",
+    "checkpoint_path": "checkpoints\\bloodmnist_swin_tiny_full_fine_tuning_100pct_best.pth",
+    "device_used_for_latency": "cuda",
+    "test_accuracy": 0.9646302250803859,
+    "test_macro_f1": 0.9596138628867654,
+    "test_auc": 0.9983881027479224,
+    "total_params": 27525506,
+    "model_size_mb": 106.06392669677734,
+    "inference_latency_ms_per_image": 3.1041364583264417
+  },
+  {
+    "model_key": "vit_b16",
+    "timm_name": "vit_base_patch16_224",
+    "checkpoint_path": "checkpoints\\bloodmnist_vit_b16_full_fine_tuning_100pct_best.pth",
+    "device_used_for_latency": "cuda",
+    "test_accuracy": 0.9470914937152879,
+    "test_macro_f1": 0.9425675694138206,
+    "test_auc": 0.9982517653186075,
+    "total_params": 85804808,
+    "model_size_mb": 327.3193664550781,
+    "inference_latency_ms_per_image": 6.945613437498348
+  }
+]

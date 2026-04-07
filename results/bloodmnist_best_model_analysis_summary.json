@@ -1,0 +1,11 @@
+{
+  "model_key": "swin_tiny",
+  "strategy_name": "gradual_unfreezing",
+  "checkpoint_path": "checkpoints\\bloodmnist_swin_tiny_gradual_unfreezing_100pct_best.pth",
+  "device": "cuda",
+  "test_loss": 0.09494716447942204,
+  "test_accuracy": 0.9710610932475884,
+  "test_macro_f1": 0.9682163666789636,
+  "test_auc": 0.9987771011860747,
+  "num_misclassified": 99
+}

@@ -1,0 +1,15 @@
+ml/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Local caches and OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Large training artifacts
+checkpoints/

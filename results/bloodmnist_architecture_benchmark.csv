@@ -1,0 +1,4 @@
+model_key,timm_name,checkpoint_path,device_used_for_latency,test_accuracy,test_macro_f1,test_auc,total_params,model_size_mb,inference_latency_ms_per_image
+resnet50,resnet50,checkpoints\bloodmnist_resnet50_full_fine_tuning_100pct_best.pth,cuda,0.956153,0.951151,0.997280,23524424,89.94,1.753
+swin_tiny,swin_tiny_patch4_window7_224,checkpoints\bloodmnist_swin_tiny_full_fine_tuning_100pct_best.pth,cuda,0.964630,0.959614,0.998388,27525506,106.06,3.104
+vit_b16,vit_base_patch16_224,checkpoints\bloodmnist_vit_b16_full_fine_tuning_100pct_best.pth,cuda,0.947091,0.942568,0.998252,85804808,327.32,6.946

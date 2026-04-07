@@ -1,0 +1,9 @@
+class_index,class_name,precision,recall,f1_score,support
+0,basophil,0.937500,0.983607,0.960000,244
+1,eosinophil,0.998397,0.998397,0.998397,624
+2,erythroblast,0.977346,0.971061,0.974194,311
+3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",0.930034,0.941278,0.935622,579
+4,lymphocyte,0.970954,0.962963,0.966942,243
+5,monocyte,0.942857,0.929577,0.936170,284
+6,neutrophil,0.984733,0.968468,0.976533,666
+7,platelet,0.997872,0.997872,0.997872,470

@@ -1,0 +1,428 @@
+{
+  "strategy_name": "discriminative_learning_rates",
+  "description": "Train all layers with lower learning rates for earlier stages.",
+  "model_key": "swin_tiny",
+  "timm_name": "swin_tiny_patch4_window7_224",
+  "checkpoint_path": "checkpoints\\bloodmnist_swin_tiny_discriminative_learning_rates_100pct_best.pth",
+  "best_epoch": 6,
+  "best_val_auc": 0.9989657169367683,
+  "history": {
+    "train_loss": [
+      0.3804212055887922,
+      0.15065123903625774,
+      0.10931445060490824,
+      0.0731576446248171,
+      0.05669420552951245,
+      0.0488593466590038,
+      0.04791600278589835,
+      0.031896795901100054,
+      0.03324015420041583
+    ],
+    "train_acc": [
+      0.8671293586420269,
+      0.9476544861610503,
+      0.9622878167070825,
+      0.9739944811439084,
+      0.9800986704573961,
+      0.9825236223764529,
+      0.982941717534911,
+      0.9887114307216323,
+      0.9884605736265574
+    ],
+    "val_loss": [
+      0.1755103761695813,
+      0.13369339902963595,
+      0.15018352803504356,
+      0.13868892219822818,
+      0.11806443199584975,
+      0.11465054406745306,
+      0.1631896596219147,
+      0.1329704338323464,
+      0.18844044622834596
+    ],
+    "val_acc": [
+      0.9421728971962616,
+      0.9561915887850467,
+      0.9485981308411215,
+      0.9614485981308412,
+      0.9643691588785047,
+      0.9667056074766355,
+      0.9573598130841121,
+      0.9661214953271028,
+      0.951518691588785
+    ],
+    "val_f1": [
+      0.9430359943219274,
+      0.9524233268846433,
+      0.9426210477116541,
+      0.9576417288034708,
+      0.961132429700734,
+      0.9639722101126336,
+      0.9562455790751698,
+      0.9621255522734662,
+      0.9401252253252168
+    ],
+    "val_auc": [
+      0.9971800668534498,
+      0.9981131665960336,
+      0.9983910379943768,
+      0.9987298340405814,
+      0.9986006762093801,
+      0.9989657169367683,
+      0.9978309840169404,
+      0.9983373039482202,
+      0.9985676220403743
+    ],
+    "trainable_params": [
+      27525506,
+      27525506,
+      27525506,
+      27525506,
+      27525506,
+      27525506,
+      27525506,
+      27525506,
+      27525506
+    ],
+    "stage": [
+      "full_model",
+      "full_model",
+      "full_model",
+      "full_model",
+      "full_model",
+      "full_model",
+      "full_model",
+      "full_model",
+      "full_model"
+    ],
+    "epoch_lr_groups": [
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ],
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ],
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ],
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ],
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ],
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ],
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ],
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ],
+      [
+        {
+          "group": "patch_embed",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.0",
+          "lr": 2.5e-05
+        },
+        {
+          "group": "layers.1",
+          "lr": 5e-05
+        },
+        {
+          "group": "layers.2",
+          "lr": 7.500000000000001e-05
+        },
+        {
+          "group": "layers.3",
+          "lr": 0.0001
+        },
+        {
+          "group": "norm",
+          "lr": 0.0001
+        },
+        {
+          "group": "head",
+          "lr": 0.0002
+        }
+      ]
+    ]
+  },
+  "test_metrics": {
+    "loss": 0.12467808165532765,
+    "accuracy": 0.9693072201110786,
+    "macro_f1": 0.9660704689031352,
+    "auc": 0.9983919130841347
+  },
+  "trainable_params_at_end": 27525506,
+  "total_params": 27525506,
+  "model_size_mb": 106.06392669677734,
+  "lr_summary": [
+    {
+      "group": "patch_embed",
+      "lr": 2.5e-05
+    },
+    {
+      "group": "layers.0",
+      "lr": 2.5e-05
+    },
+    {
+      "group": "layers.1",
+      "lr": 5e-05
+    },
+    {
+      "group": "layers.2",
+      "lr": 7.500000000000001e-05
+    },
+    {
+      "group": "layers.3",
+      "lr": 0.0001
+    },
+    {
+      "group": "norm",
+      "lr": 0.0001
+    },
+    {
+      "group": "head",
+      "lr": 0.0002
+    }
+  ],
+  "elapsed_seconds": 1256.8888283999986,
+  "dataset_sizes": {
+    "train": 11959,
+    "val": 1712,
+    "test": 3421
+  },
+  "config": {
+    "model_key": "swin_tiny",
+    "timm_name": "swin_tiny_patch4_window7_224",
+    "input_size": 224,
+    "train_fraction": 1.0,
+    "batch_size": 32,
+    "num_workers": 0,
+    "num_epochs": 12,
+    "patience": 3,
+    "weight_decay": 0.0001,
+    "seed": 42
+  }
+}

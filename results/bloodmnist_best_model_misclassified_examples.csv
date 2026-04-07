@@ -1,0 +1,17 @@
+sample_index,true_label_index,true_label_name,predicted_label_index,predicted_label_name,predicted_confidence
+3126,6,neutrophil,1,eosinophil,1.000000
+1750,5,monocyte,4,lymphocyte,0.999752
+1967,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",0,basophil,0.999673
+476,6,neutrophil,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",0.997838
+3329,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",5,monocyte,0.997813
+2512,2,erythroblast,0,basophil,0.995965
+1459,5,monocyte,4,lymphocyte,0.995687
+2823,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",0,basophil,0.995085
+145,4,lymphocyte,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",0.993231
+2649,5,monocyte,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",0.991333
+340,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",6,neutrophil,0.987954
+2908,2,erythroblast,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",0.987383
+2830,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",5,monocyte,0.985372
+1220,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",5,monocyte,0.983724
+2460,2,erythroblast,7,platelet,0.981515
+1629,3,"immature granulocytes(myelocytes, metamyelocytes and promyelocytes)",6,neutrophil,0.977934

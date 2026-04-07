@@ -1,0 +1,81 @@
+{
+  "model_key": "swin_tiny",
+  "timm_name": "swin_tiny_patch4_window7_224",
+  "init_mode": "pretrained",
+  "description": "ImageNet-pretrained Swin-Tiny with full fine-tuning.",
+  "train_fraction": 0.25,
+  "checkpoint_path": "checkpoints\\bloodmnist_swin_tiny_pretrained_25pct_seed42_best.pth",
+  "best_epoch": 2,
+  "best_val_auc": 0.995686700695163,
+  "history": {
+    "train_loss": [
+      0.7192505586103437,
+      0.2913891578466448,
+      0.2198997614235334,
+      0.1524948728669344,
+      0.10424815886552695
+    ],
+    "train_acc": [
+      0.7433924389427903,
+      0.8949481431917029,
+      0.9243894279023085,
+      0.9464703914352627,
+      0.9662094345935095
+    ],
+    "val_loss": [
+      0.39108856342663273,
+      0.2121973526533519,
+      0.23899143464236616,
+      0.22754367540163972,
+      0.2612846180378834
+    ],
+    "val_acc": [
+      0.8656542056074766,
+      0.9246495327102804,
+      0.9228971962616822,
+      0.9240654205607477,
+      0.9223130841121495
+    ],
+    "val_f1": [
+      0.8305980339268615,
+      0.9170845645638017,
+      0.9130460860918809,
+      0.9145975678165457,
+      0.9141801460556283
+    ],
+    "val_auc": [
+      0.9885699588399016,
+      0.995686700695163,
+      0.9950311629491613,
+      0.9951815951775298,
+      0.9943319534476424
+    ]
+  },
+  "test_metrics": {
+    "loss": 0.2222184643249559,
+    "accuracy": 0.926629640456007,
+    "macro_f1": 0.9180482444300359,
+    "auc": 0.9947410491992736
+  },
+  "total_params": 27525506,
+  "model_size_mb": 106.06392669677734,
+  "elapsed_seconds": 214.56399369999417,
+  "dataset_sizes": {
+    "train": 2989,
+    "val": 1712,
+    "test": 3421
+  },
+  "config": {
+    "model_key": "swin_tiny",
+    "timm_name": "swin_tiny_patch4_window7_224",
+    "input_size": 224,
+    "batch_size": 32,
+    "num_workers": 0,
+    "weight_decay": 0.0001,
+    "seed": 42,
+    "lr": 0.0001,
+    "num_epochs": 12,
+    "patience": 3,
+    "pretrained": true
+  }
+}

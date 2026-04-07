@@ -1,0 +1,17 @@
+experiment_group,experiment_name,model_key,pretrained,train_fraction,seed_or_seeds,optimizer,learning_rate,lr_schedule,batch_size,num_epochs,early_stopping_patience,weight_decay,image_size,fine_tuning_strategy,augmentation_details
+architecture_comparison,resnet50_full_fine_tuning,resnet50,yes,100%,42,AdamW,1e-4,none,32,12,3,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+architecture_comparison,swin_tiny_full_fine_tuning,swin_tiny,yes,100%,42,AdamW,1e-4,none,32,12,3,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+architecture_comparison,vit_b16_full_fine_tuning,vit_b16,yes,100%,42,AdamW,1e-4,none,32,12,3,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+strategy_comparison,swin_tiny_feature_extraction,swin_tiny,yes,100%,42,AdamW,1e-4,none,32,12,3,1e-4,224,feature_extraction,Resize to 224x224; ImageNet normalization; no extra augmentation
+strategy_comparison,swin_tiny_gradual_unfreezing,swin_tiny,yes,100%,42,AdamW,1e-4,none,32,12,3,1e-4,224,gradual_unfreezing,Resize to 224x224; ImageNet normalization; no extra augmentation
+strategy_comparison,swin_tiny_discriminative_learning_rates,swin_tiny,yes,100%,42,AdamW,"patch/layer groups = [2.5e-5, 2.5e-5, 5e-5, 7.5e-5, 1e-4, 1e-4, 2e-4]",none,32,12,3,1e-4,224,discriminative_learning_rates,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_pretrained_100%,swin_tiny,yes,100%,"42,123,3185",AdamW,1e-4,none,32,12,3,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_scratch_100%,swin_tiny,no,100%,"42,123,3185",AdamW,5e-4,none,32,30,5,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_pretrained_50%,swin_tiny,yes,50%,"42,123,3185",AdamW,1e-4,none,32,12,3,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_scratch_50%,swin_tiny,no,50%,"42,123,3185",AdamW,5e-4,none,32,30,5,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_pretrained_25%,swin_tiny,yes,25%,"42,123,3185",AdamW,1e-4,none,32,12,3,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_scratch_25%,swin_tiny,no,25%,"42,123,3185",AdamW,5e-4,none,32,30,5,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_pretrained_10%,swin_tiny,yes,10%,"42,123,3185",AdamW,1e-4,none,32,12,3,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_scratch_10%,swin_tiny,no,10%,"42,123,3185",AdamW,5e-4,none,32,30,5,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_pretrained_5%,swin_tiny,yes,5%,"42,123,3185",AdamW,1e-4,none,32,12,3,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
+data_efficiency,swin_tiny_scratch_5%,swin_tiny,no,5%,"42,123,3185",AdamW,5e-4,none,32,30,5,1e-4,224,full_fine_tuning,Resize to 224x224; ImageNet normalization; no extra augmentation
