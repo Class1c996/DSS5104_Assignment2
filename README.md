@@ -57,15 +57,21 @@ python .\generate_report_artifacts.py
 
 ## Main Outputs
 
-- `results/swin_tiny_strategy_summary.csv`
-- `results/swin_tiny_pretrained_vs_scratch_summary.csv`
-- `results/bloodmnist_architecture_benchmark.csv`
-- `results/hyperparameter_table.csv`
-- `results/bloodmnist_best_model_per_class_metrics.csv`
-- `results/bloodmnist_best_model_class_summary.json`
-- `results/bloodmnist_best_model_misclassified_examples.csv`
-- `figures/bloodmnist_best_model_confusion_matrix.png`
-- `figures/bloodmnist_best_model_misclassified_examples.png`
+- `results/swin_tiny_strategy_summary.csv`: summary table for the three fine-tuning strategies, including best epoch, validation AUC, test accuracy, macro F1, AUC, runtime, and model size
+- `results/swin_tiny_pretrained_vs_scratch_summary.csv`: aggregated data-efficiency results for pretrained vs scratch Swin-Tiny across all training fractions, reported as mean and standard deviation over 3 seeds
+- `results/bloodmnist_architecture_benchmark.csv`: architecture comparison table for ResNet-50, Swin-Tiny, and ViT-B/16, including test metrics, parameter count, model size, and inference latency
+- `results/hyperparameter_table.csv`: consolidated experiment settings, including optimizer, learning rate, batch size, epochs, patience, weight decay, image size, and fine-tuning strategy
+- `results/bloodmnist_best_model_per_class_metrics.csv`: per-class precision, recall, F1 score, and support for the selected best model on the test set
+- `results/bloodmnist_best_model_class_summary.json`: summary of the best-performing and worst-performing classes for the best model, together with macro and weighted averages
+- `results/bloodmnist_best_model_misclassified_examples.csv`: list of representative misclassified test samples, including true label, predicted label, and prediction confidence
+- `figures/bloodmnist_architecture_comparison_training_curves.png`: training and validation curves for the three pretrained architectures
+- `figures/bloodmnist_architecture_comparison_test_metrics.png`: bar chart comparing test accuracy, macro F1, and AUC across the three pretrained architectures
+- `figures/bloodmnist_swin_tiny_strategy_training_curves.png`: training and validation curves for the three Swin-Tiny fine-tuning strategies
+- `figures/bloodmnist_swin_tiny_strategy_test_metrics.png`: bar chart comparing test accuracy, macro F1, and AUC across the three fine-tuning strategies
+- `figures/bloodmnist_swin_pretrained_vs_scratch_accuracy_auc.png`: plot of pretrained vs scratch performance across training fractions using accuracy and AUC
+- `figures/bloodmnist_swin_pretrained_vs_scratch_macro_f1.png`: plot of pretrained vs scratch performance across training fractions using macro F1
+- `figures/bloodmnist_best_model_confusion_matrix.png`: confusion matrix for the final best model on the held-out test set
+- `figures/bloodmnist_best_model_misclassified_examples.png`: grid of representative misclassified BloodMNIST examples used for qualitative error analysis
 
 ## Notes
 
