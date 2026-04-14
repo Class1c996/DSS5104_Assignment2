@@ -9,11 +9,11 @@ The project includes three main experiment blocks:
 
 ## Repository Structure
 
-- `BloodMNIST_resnet_swin_vit.ipynb`: notebook for pretrained architecture comparison
-- `Swin_strategy_finetuning.ipynb`: notebook for fine-tuning strategy comparison
-- `Swin_pretrained_vs_scratch.ipynb`: notebook for pretrained vs scratch data-efficiency experiments
-- `run_swin_strategies.py`: script version of the strategy comparison
-- `run_swin_pretrained_vs_scratch.py`: script version of the data-efficiency experiment
+- `BloodMNIST_resnet_swin_vit.ipynb`: notebook for pretrained architecture comparison among ResNet-50, Swin-Tiny, and ViT-B/16 on BloodMNIST
+- `Swin_strategy_finetuning.ipynb`: notebook interface for launching the Swin-Tiny fine-tuning strategy comparison; internally invokes `run_swin_strategies.py`
+- `Swin_pretrained_vs_scratch.ipynb`: notebook interface for launching the pretrained-versus-scratch data-efficiency experiment; internally invokes `run_swin_pretrained_vs_scratch.py`
+- `run_swin_strategies.py`: underlying command-line script used by `Swin_strategy_finetuning.ipynb` to execute the Swin-Tiny fine-tuning strategy comparison
+- `run_swin_pretrained_vs_scratch.py`: underlying command-line script used by `Swin_pretrained_vs_scratch.ipynb` to execute the pretrained-versus-scratch data-efficiency experiment
 - `generate_report_artifacts.py`: generates report-ready tables and figures
 - `results/`: CSV and JSON result summaries
 - `figures/`: generated figures used in the report
@@ -21,7 +21,7 @@ The project includes three main experiment blocks:
 
 ## Environment Setup
 
-Create a fresh virtual environment locally. Do not upload the virtual environment folder to GitHub.
+Create a fresh virtual environment locally.
 
 ```powershell
 python -m venv .venv
